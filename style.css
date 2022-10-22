@@ -1,0 +1,72 @@
+.calculator {
+  border: solid hsl(318, 100%, 80%) 5px;
+  margin-inline-start: auto;
+  margin-inline-end: auto; 
+  max-inline-size: 21rem;
+  overflow: hidden;
+  color: black;
+  
+}
+.title {
+  background-color: hsl(318, 100%, 80%);
+  height: 5px;
+  padding: 20%;
+  padding-top: 0.5%;
+  text-align: center;
+  font-size: 1.0rem;
+}
+.calculatorOutput {
+  background: rgb(146, 253, 142);
+  font-size: 4.2rem;
+  padding-block-start: 3rem;
+  padding-block-end: 0.5rem;
+  padding-inline-end: 1.25rem;
+  text-align: end;
+}
+.calculatorKeys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  background: rgb(38, 133, 0);
+  padding: 0.5rem;
+}
+.calculatorKey {
+  background: rgb(146, 253, 142);
+  border: none;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-end: 1.25rem;
+  padding-inline-start: 1.25rem;
+  font-size: 1.5rem;
+  inline-size: 70px;
+  block-size: 70px;
+  margin: 0.25rem;
+  border-radius: 0px;
+}
+.calculatorKey:active {
+  outline: none;
+}
+.calculatorKey:focus {
+  outline: none;
+}
+.calculatorKeyOperator {
+  background: hsl(128, 100%, 50%);
+}
+.calculatorKeyOperator:active {
+  background: hsl(208, 24%, 80%);
+}
+.calculatorKeyEnter {
+  grid-column: 4/ 5;
+  grid-row: 3 / span 4;
+  background: hsl(318, 100%, 80%);
+  height: auto;
+}
+.calculatorKeyBackspace {
+  grid-column: 4/ 5;
+  grid-row: 2 / span 1;
+  background: hsl(128, 100%, 50%);
+  height: auto;
+}
+.clear {
+  background-color: hsl(318, 100%, 80%);
+}
